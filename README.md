@@ -14,7 +14,7 @@ https://github.com/Michaelvilleneuve/react-native-document-scanner
 
 `$ npm install https://github.com/Poojan31/react-native-perspective-image-cropper --save`
 
-`$ react-native link https://github.com/Poojan31/react-native-perspective-image-cropper
+`$ react-native link https://github.com/Poojan31/react-native-perspective-image-cropper`
 
 This library uses react-native-svg, you must install it too. See https://github.com/react-native-community/react-native-svg for more infos.
 
