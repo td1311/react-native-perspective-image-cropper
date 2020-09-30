@@ -47,7 +47,7 @@ public class RNCustomCropModule extends ReactContextBaseJavaModule {
         Point bl = new Point(points.getMap("bottomLeft").getDouble("x"), points.getMap("bottomLeft").getDouble("y"));
         Point br = new Point(points.getMap("bottomRight").getDouble("x"), points.getMap("bottomRight").getDouble("y"));
 
-        Mat src = Imgcodecs.imread(imageUri.replace("file://", ""), Imgproc.COLOR_BGR2RGB);
+        Mat src = Imgcodecs.imread(imageUri.replace("file:/", ""), Imgproc.COLOR_BGR2RGB);
         Imgproc.cvtColor(src, src, Imgproc.COLOR_BGR2RGB);
         Imgproc.resize(src, src, new Size(points.getDouble("width"), points.getDouble("height")));
 
